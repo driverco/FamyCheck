@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "797433797227",
+    "firebase_url": "https://famycheck.firebaseio.com",
+    "project_id": "famycheck",
+    "storage_bucket": "famycheck.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:797433797227:android:7d9244a0d7af786e4bef2e",
+        "android_client_info": {
+          "package_name": "com.driverco.famycheck"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "797433797227-rjiihbickn5s4keadd5bmcipb1dpinqe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsu06G-serXYEZbaMi9PVWJUw8OUXwVHk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "797433797227-rjiihbickn5s4keadd5bmcipb1dpinqe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
