@@ -3,23 +3,36 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@id/nav_home">
 
     <fragment
         android:id="@+id/nav_home"
         android:name="com.driverco.famycheck.ui.home.HomeFragment"
         android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_nav_famy"
+            app:destination="@id/nav_famy" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_famy"
         android:name="com.driverco.famycheck.ui.famy.FamyFragment"
         android:label="@string/menu_famys"
-        tools:layout="@layout/fragment_famy" />
+        tools:layout="@layout/fragment_famy" >
+        <action
+            android:id="@+id/action_nav_famy_to_topicsFragment"
+            app:destination="@id/topicsFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_check"
         android:name="com.driverco.famycheck.ui.check.CheckFragment"
         android:label="@string/menu_check"
         tools:layout="@layout/fragment_check" />
+    <fragment
+        android:id="@+id/topicsFragment"
+        android:name="com.driverco.famycheck.TopicsFragment"
+        android:label="Topics of Famy"
+        tools:layout="@layout/fragment_topics" />
 </navigation>

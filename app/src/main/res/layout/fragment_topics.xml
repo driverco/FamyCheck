@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.famy.FamyFragment">
+    tools:context=".TopicsFragment">
 
     <GridView
-        android:id="@+id/famysGridView"
+        android:id="@+id/topicsGridView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintEnd_toEndOf="parent"
