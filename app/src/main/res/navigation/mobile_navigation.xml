@@ -13,13 +13,13 @@
 
     <fragment
         android:id="@+id/nav_famy"
-        android:name="com.driverco.famycheck.ui.gallery.GalleryFragment"
+        android:name="com.driverco.famycheck.ui.famy.FamyFragment"
         android:label="@string/menu_famys"
-        tools:layout="@layout/fragment_gallery" />
+        tools:layout="@layout/fragment_famy" />
 
     <fragment
         android:id="@+id/nav_check"
-        android:name="com.driverco.famycheck.ui.slideshow.SlideshowFragment"
+        android:name="com.driverco.famycheck.ui.check.CheckFragment"
         android:label="@string/menu_check"
-        tools:layout="@layout/fragment_slideshow" />
+        tools:layout="@layout/fragment_check" />
 </navigation>

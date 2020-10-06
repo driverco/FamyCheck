@@ -1,4 +1,4 @@
-package com.driverco.famycheck.ui.gallery
+package com.driverco.famycheck.ui.famy
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,9 +10,9 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.driverco.famycheck.R
 
-class GalleryFragment : Fragment() {
+class FamyFragment : Fragment() {
 
-    private lateinit var galleryViewModel: GalleryViewModel
+    private lateinit var galleryViewModel: FamyViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -20,8 +20,8 @@ class GalleryFragment : Fragment() {
         savedInstanceState: Bundle?,
     ): View? {
         galleryViewModel =
-            ViewModelProviders.of(this).get(GalleryViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_gallery, container, false)
+            ViewModelProviders.of(this).get(FamyViewModel::class.java)
+        val root = inflater.inflate(R.layout.fragment_famy, container, false)
         val textView: TextView = root.findViewById(R.id.text_gallery)
         galleryViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
