@@ -34,5 +34,14 @@
         android:id="@+id/topicsFragment"
         android:name="com.driverco.famycheck.TopicsFragment"
         android:label="Topics of Famy"
-        tools:layout="@layout/fragment_topics" />
+        tools:layout="@layout/fragment_topics" >
+        <action
+            android:id="@+id/action_topicsFragment_to_membersFragment"
+            app:destination="@id/membersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/membersFragment"
+        android:name="com.driverco.famycheck.MembersFragment"
+        android:label="Members of Famy "
+        tools:layout="@layout/fragment_members" />
 </navigation>
